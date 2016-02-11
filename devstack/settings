@@ -1,0 +1,2 @@
+# Comma seperated list of repos/packages to install
+LATEST_CODEBASES=${LATEST_CODEBASES:-libvirt}
