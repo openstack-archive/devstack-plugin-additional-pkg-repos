@@ -24,8 +24,7 @@ As part of ```unstack.sh``` | ```clean.sh```:
 # TODOs
 
 * Document How to use
-* Actually run tempest ;P
-* upload to git-hub
+* Add to git.openstack.org in the openstack namespace
 * add experimental job to project-config
 
 # Bugs
