@@ -13,6 +13,9 @@ set +o xtrace
 # Uses globals ``REQUIREMENTS_DIR``
 # Uses functions ``get_from_global_requirements``
 function pre_install_libvirt_ubuntu {
+    # NOTE(markus_z): The command "add-apt-repository" is not available
+    # in the test nodes. We add it here:
+    sudo apt-get install -y software-properties-common
     # We don't use install_package as we know we're on ubuntu and we do a few
     # "special" things to make the plugin "just work"
     sudo add-apt-repository -y cloud-archive:liberty
