@@ -51,6 +51,8 @@ function shutdown_libvirt_ubuntu {
     # Make sure we don't leave an almost certainly broken libvirt-python
     # installed
     sudo pip uninstall -y libvirt-python
+    # Remove the package we installed in "pre_install_libvirt_ubuntu"
+    sudo apt-get purge -y software-properties-common
 }
 
 
