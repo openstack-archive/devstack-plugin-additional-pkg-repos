@@ -24,8 +24,8 @@ function pre_install_libvirt_ubuntu {
     # NOTE(tonyb): This will nuke any/all libvirt config changes
     sudo apt-get -o Dpkg::Options::="--force-confnew,confmiss" \
         install -y \
-            libvirt-{bin,dev}=1.2.16-2ubuntu11.15.10.3~cloud0 \
-            qemu-{kvm,utils}=1:2.3+dfsg-5ubuntu9.1~cloud0
+            libvirt-{bin,dev}=1.2.16-2ubuntu11.15.10.4~cloud0 \
+            qemu-{kvm,utils}=1:2.3+dfsg-5ubuntu9.3~cloud0
 
     # We *need* to ensure that libvirt-python is built against the new version
     # of libvirt.so.0  Bypass the cache.  This is little sub-optimal becuase we
